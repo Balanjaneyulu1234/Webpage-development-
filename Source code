@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeland Real Estate</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hero Section Styles */
+        #hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        #hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Stats Section Styles */
+        #stats {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e0e0e0;
+        }
+
+        #stats .stat {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        /* Why Choose Primeland Section Styles */
+        #why-choose {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div>
+                    <header>
+                        <div className="logo">
+                            <img src="logo.png" alt="Primeland Real Estate" />
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">PROJECTS</a></li>
+                                <li><a href="#">PARTNER WITH US</a></li>
+                                <li><a href="#">GALLERY</a></li>
+                                <li><a href="#">CAREERS</a></li>
+                                <li><a href="#">KNOWLEDGE HUB</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+
+                    <section id="hero">
+                        <img src="hero-image.jpg" alt="Modern Sustainable Community" />
+                        <h1>THE PRIMELAND MARK</h1>
+                        <p>We work with a purpose and the purpose is to create value for everyone. At Primeland, we focus on developing positive, smarter, and sustainable communities to elevate the lifestyles for everyone.</p>
+                    </section>
+
+                    <section id="stats">
+                        <div className="stat">
+                            <h2>25+ INDUSTRY EXPERIENCE</h2>
+                        </div>
+                        <div className="stat">
+                            <h2>2K+ ACRES CRAFTED</h2>
+                        </div>
+                        <div className="stat">
+                            <h2>10K+ HAPPY CUSTOMERS</h2>
+                        </div>
+                    </section>
+
+                    <section id="why-choose">
+                        <h2>WHY PEOPLE CHOOSE PRIMELAND</h2>
+                        <p>We work with a purpose and the purpose is to create value for everyone. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </section>
+
+                    <footer>
+                        <div className="address">
+                            <h3>Address:</h3>
+                            <p>CORPORATE OFFICE: My Home Hub, 7th Floor, Block 2, Madhapur, Hitechcity Hyderabad, Telangana 500033.</p>
+                            <p>BANGALORE OFFICE: 40/1A, 1st floor, Basappa Complex, Lavelle Road, behind Rotary Club, Bengaluru, Karnataka 560001</p>
+                        </div>
+                        <div className="email">
+                            <h3>Email:</h3>
+                            <p>info@primelandindia.com</p>
+                        </div>
+                    </footer>
+                </div>
+            );
+        }
+
+        ReactDOM.render(
+            <App />,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeland Real Estate</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Project Page Styles */
+        .project-info {
+            margin: 20px;
+        }
+
+        .project-info h1 {
+            color: #333;
+        }
+
+        .project-info p {
+            margin-bottom: 10px;
+        }
+
+        .features {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        .location-advantages {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Primeland Real Estate" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">PARTNER WITH US</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">KNOWLEDGE HUB</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="project-info">
+        <h1>Welcome to Pedda Amberpet</h1>
+        <p>If the apartment life is more of your style then we’ve got you covered. Live in your dream home at an excellent premium, 2 & 3 BHK apartments with exclusive amenities that let you experience luxury and comfort unlike anything else.</p>
+
+        <h2>Project Features</h2>
+        <ul class="features">
+            <li>Basket Ball</li>
+            <li>Board Games</li>
+            <li>Carrom</li>
+            <li>Chess</li>
+            <li>Coffee Shop</li>
+            <li>Cycling Track</li>
+            <li>Foosball</li>
+            <li>Gym</li>
+            <li>Kids Play Zone</li>
+            <li>Lobby</li>
+            <li>Multipurpose Party Hall</li>
+            <li>Net Cricket</li>
+            <li>Restaurant</li>
+            <li>Table Tennis</li>
+            <li>Volley Ball Court</li>
+        </ul>
+
+        <h2>Floor Images</h2>
+        <div class="floor-images">
+            <!-- Put any dummy images here -->
+        </div>
+
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <!-- Put any 6 gallery images here -->
+        </div>
+
+        <h2>Location Advantages</h2>
+        <ul class="location-advantages">
+            <li>Very close to Ramoji Film city</li>
+            <li>10 mins from Sanghi Temple</li>
+            <li>10 mins from the proposed Railway Station at Nagole</li>
+            <li>Very next to Outer Ring Road</li>
+            <li>30 mins drive to International Airport</li>
+            <li>Close to Discoveri Oaks international School</li>
+            <li>Candor Shrine I School</li>
+            <li>Close proximity to Super Speciality Hospitals</li>
+            <li>Very close to RamaDevi Public School</li>
+            <li>Close to Valvoline Cummins Pvt</li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="address">
+            <h3>Address:</h3>
+            <p>CORPORATE OFFICE: My Home Hub, 7th Floor, Block 2, Madhapur, Hitechcity Hyderabad, Telangana 500033.</p>
+            <p>BANGALORE OFFICE: 40/1A, 1st floor, Basappa Complex, Lavelle Road, behind Rotary Club, Bengaluru, Karnataka 560001</p>
+        </div>
+        <div class="email">
+            <h3>Email:</h3>
+            <p>info@primelandindia.com</p>
+        </div>
+    </footer>
+</body>
+</html>
